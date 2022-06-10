@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <div id="main">
@@ -14,40 +15,41 @@
                 <img id="odinImage" src="images/odin-lined.png">
                 <p>ODIN</p>
             </div>
+            <footer>Photo by <u>Halie West</u> on <u>Unsplash</u></footer>
         </div>
         <div id="rightSide">
             <div class="topAndBottom" id="topContainer">
-                <div class="third" id="top">
+                <div class="rightSideSection" id="top">
                     <p class="bigFont">This is not a real online service! You know you need something like this in your life to
                         help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
                     <p class="bigFont">You <em>know</em> you want to.</p>
                 </div>
             </div>
             <div id="middleContainer">
-                <div class="third" id="middle">
+                <div class="rightSideSection" id="middle">
                     <h1 class="bigFont">Let's do this!</h1>
                     <form action="" method="get">
                         <div class="formSide" id="leftSideForm">
                             <label for="firstName">First Name</label>
                             <input type="text" id="firstName">
                             <label for="email">Email</label>
-                            <input type="text" id="email">
+                            <input type="email" id="email">
                             <label for="password">Password</label>
-                            <input type="text" id="password" minlength="8" required>
+                            <input type="password" id="password" minlength="8">
                         </div>
                         <div class="formSide" id="rightSideForm">
                             <label for="lastName">Last Name</label>
                             <input type="text" id="lastName">
                             <label for="phoneNumber">Phone Number</label>
-                            <input type="text" id="phoneNumber">
-                            <label for="confirmPassword">Confirm Password</label>
-                            <input type="text" id="confirmPassword">
+                            <input type="tel" id="phoneNumber">
+                            <label for="passwordConfirmation">Confirm Password</label>
+                            <input type="password" id="passwordConfirmation">
                         </div>
                     </form>
                 </div>
             </div>
             <div class="topAndBottom" id="bottomContainer">
-                <div class="third" id="bottom">
+                <div class="rightSideSection" id="bottom">
                     <button type="submit">Create Account</button>
                     <p>Already have an account? <a href="#">Log in</a></p>
                 </div>

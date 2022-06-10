@@ -24,12 +24,46 @@ body {
     width: 100%;
 }
 
+/* Left side of page */
+
 #leftSide {
     display: flex;
     width: 33%;
     height: 100%;
     flex-direction: column;
 }
+
+
+#logoBar {
+    height: 7rem;
+    background-color: rgb(0,0,0,.5);
+    width: 100%;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#odinImage {
+    height: 75%;
+}
+
+#logoBar p {
+    color: white;
+    font-size: 4rem;
+    font-family: Norse Bold;
+}
+
+footer {
+    margin-top: auto;
+    color:rgb(245, 245, 245, .7);
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+/* Right side of page */
 
 #rightSide {
     display: flex;
@@ -39,29 +73,13 @@ body {
     background-color: #fff;
 }
 
-.third {
+.rightSideSection {
     padding: 2rem 3rem;
 }
 
 .topAndBottom {
     height: 33%;
     background-color: rgb(246, 246, 246);
-}
-
-form {
-    display: flex;
-    gap: 4rem;
-}
-
-#leftSideForm {
-    display: flex;
-    flex-direction: column;
-}
-
-#rightSideForm {
-    display: flex;
-    flex-direction: column;
-
 }
 
 #topContainer {
@@ -90,6 +108,25 @@ form {
     flex-direction: column;
     justify-content: flex-start;
     box-shadow: inset 0px -1px 5px rgb(137, 136, 136);
+}
+
+form {
+    display: flex;
+    gap: 4rem;
+}
+
+.formSide {
+    width: 30%;
+}
+
+#leftSideForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#rightSideForm {
+    display: flex;
+    flex-direction: column;
 }
 
 .bigFont {
@@ -138,40 +175,21 @@ input:focus {
     box-shadow: 1px 1px 4px;
 }
 
-input:invalid {
-    outline: red;
-}
-
-.formSide {
-    width: 30%;
-}
-
 h1 {
     padding: none;
     margin: 0;
     color: rgb(106, 103, 103);
 }
 
-#logoBar {
-    height: 7rem;
-    background-color: rgb(0,0,0,.5);
-    width: 100%;
-    margin-top: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.third p {
+.rightSideSection p {
     margin-top: 25px;
 }
 
-#odinImage {
-    height: 75%;
+input:invalid {
+    border: solid red;
+
 }
 
-#logoBar p {
-    color: white;
-    font-size: 4rem;
-    font-family: Norse Bold;
+input:invalid:focus, .error {
+    border: solid red;
 }
