@@ -18,41 +18,51 @@
             <footer>Photo by <u>Halie West</u> on <u>Unsplash</u></footer>
         </div>
         <div id="rightSide">
-            <div class="topAndBottom" id="topContainer">
-                <div class="rightSideSection" id="top">
+            <div id="topContainer">
+                <div id="top">
                     <p class="bigFont">This is not a real online service! You know you need something like this in your life to
                         help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
                     <p class="bigFont">You <em>know</em> you want to.</p>
                 </div>
             </div>
-            <div id="middleContainer">
-                <div class="rightSideSection" id="middle">
-                    <h1 class="bigFont">Let's do this!</h1>
-                    <form action="" method="get">
-                        <div class="formSide" id="leftSideForm">
-                            <label for="firstName">First Name</label>
-                            <input type="text" id="firstName">
-                            <label for="email">Email</label>
-                            <input type="email" id="email">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" minlength="8">
+            <div id="bottomContainer">
+                <form action="" method="get">
+                    <div id="inputs">
+                        <legend><h1 class="bigFont">Let's do this!</h1></legend>
+                        <div class="row" id="row1">
+                            <div class="labelAndInput" id="firstNameContainer">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName">
+                            </div>
+                            <div class="labelAndInput" id="lastNameContainer">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName">
+                            </div>
                         </div>
-                        <div class="formSide" id="rightSideForm">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName">
-                            <label for="phoneNumber">Phone Number</label>
-                            <input type="tel" id="phoneNumber">
-                            <label for="passwordConfirmation">Confirm Password</label>
-                            <input type="password" id="passwordConfirmation">
+                        <div  class="row" id="row2">
+                            <div class="labelAndInput" id="emailContainer">
+                                <label for="email">Email</label>
+                                <input type="email" id="email">
+                            </div>
+                            <div class="labelAndInput" id="phoneNumberContainer">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="tel" id="phoneNumber">
+                            </div>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <div class="topAndBottom" id="bottomContainer">
-                <div class="rightSideSection" id="bottom">
+                        <div class="row" id="row3">
+                            <div class="labelAndInput" id="passwordContainer">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" minlength="8">
+                            </div>
+                            <div class="labelAndInput" id="passwordConfirmationContainer">
+                                <label for="passwordConfirmation">Confirm Password</label>
+                                <input type="password" id="passwordConfirmation">
+                            </div>
+                        </div>
+                    </div>
                     <button type="submit">Create Account</button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
-                </div>
+                </form>
+                <p id="bottomBlurb">Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
     </div>
