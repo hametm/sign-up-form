@@ -1,11 +1,16 @@
+@font-face {
+    font-family: Norse Bold;
+    src: url(/Users/morgan/Library/Fonts/Norse-Bold.otf);
+}
+
 html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 body {
     display: flex;
-    height: 175vh;
+    height: 1000px;
     margin: 0;
     justify-content: center;
     background-color: black;
@@ -23,6 +28,7 @@ body {
     display: flex;
     width: 33%;
     height: 100%;
+    flex-direction: column;
 }
 
 #rightSide {
@@ -34,18 +40,12 @@ body {
 }
 
 .third {
-    padding: 2rem 2rem;
+    padding: 2rem 3rem;
 }
 
 .topAndBottom {
-    height: 35%;
-    background-color: rgb(239, 239, 239);
-}
-
-#middleContainer {
-    height: 30%;
-    display: flex;
-    flex-direction: column;
+    height: 33%;
+    background-color: rgb(246, 246, 246);
 }
 
 form {
@@ -74,12 +74,22 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 34%;
+}
+
+#middle {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
 }
 
 #bottomContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    box-shadow: inset 0px -1px 5px rgb(137, 136, 136);
 }
 
 .bigFont {
@@ -91,7 +101,7 @@ label {
     padding-top: 10px;
     padding-bottom: 1px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: rgb(106, 103, 103);
     font-weight: bold;
 }
@@ -103,7 +113,14 @@ button {
     height: 3rem;
     width: 15rem;
     border: none;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 1px 1px 3px black;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translate(2px, 2px);
 }
 
 a {
@@ -113,7 +130,8 @@ a {
 
 input {
     padding: 3px;
-
+    border: solid rgb(235, 235, 235);
+    border-radius: 5px;
 }
 
 input:focus {
@@ -126,4 +144,34 @@ input:invalid {
 
 .formSide {
     width: 30%;
+}
+
+h1 {
+    padding: none;
+    margin: 0;
+    color: rgb(106, 103, 103);
+}
+
+#logoBar {
+    height: 7rem;
+    background-color: rgb(0,0,0,.5);
+    width: 100%;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third p {
+    margin-top: 25px;
+}
+
+#odinImage {
+    height: 75%;
+}
+
+#logoBar p {
+    color: white;
+    font-size: 4rem;
+    font-family: Norse Bold;
 }
