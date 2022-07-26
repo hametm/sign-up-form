@@ -92,13 +92,6 @@ footer {
     padding-left: 4rem;
 }
 
-/* #bottomContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    box-shadow: inset 0px -1px 5px rgb(137, 136, 136);
-} */
-
 #inputs {
     display: flex;
     flex-direction: column;

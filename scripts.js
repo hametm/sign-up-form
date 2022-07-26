@@ -20,5 +20,3 @@ password.addEventListener('input', (e) => {
         password.setCustomValidity("");
     }
 });
-
-/* Could be better */
